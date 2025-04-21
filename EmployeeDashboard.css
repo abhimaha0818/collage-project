@@ -1,0 +1,28 @@
+.employee-container {
+    padding: 30px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .employee-container h2 {
+    font-size: 28px;
+    color: #2a2a2a;
+  }
+  
+  .employee-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .employee-container button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .employee-container button:hover {
+    background-color: #218838;
+  }

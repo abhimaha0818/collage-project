@@ -1,0 +1,25 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../../styles/ManagerDashboard.css';
+
+const ManagerDashboard = () => {
+  const navigate = useNavigate();
+  const role = localStorage.getItem('role');
+
+  const handleLogout = () => {
+    localStorage.clear();
+    navigate('/');
+  };
+
+  return (
+    <div style={{ padding: '30px' }}>
+      <h2>Welcome, {role?.toUpperCase()}!</h2>
+      <p>This is the Manager Dashboard</p>
+      <button onClick={handleLogout} style={{ padding: '10px', marginTop: '20px' }}>
+        Logout
+      </button>
+    </div>
+  );
+};
+
+export default ManagerDashboard;
